@@ -1,0 +1,140 @@
+/* Color palette: #E2E2B6 #6EACDA #03346E #021526 */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #021526;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: #f9f9f9;
+  color: #021526;
+  cursor: pointer;
+}
+
+.hero {
+  background: #6eacda;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  padding: 100px 40px;
+  border-radius: 40px;
+  max-width: 1200px;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero p {
+  margin-bottom: 30px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn1,
+.btn2 {
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+  border: 2px solid #021526;
+}
+
+.btn1 {
+  color: white;
+  background-color: #021526;
+  margin-right: 10px;
+}
+
+.btn1:hover {
+  background-color: #05718b;
+  color: white;
+  cursor: pointer;
+}
+
+.btn2 {
+  color: #021526;
+  background-color: transparent;
+}
+
+.btn2:hover {
+  background-color: #021526;
+  color: white;
+  cursor: pointer;
+}
+
+span {
+  background-color: #021526;
+  color: #f9f9f9;
+  padding: 10px 5px;
+  border-radius: 7px;
+}
+
+/* ---------- RESPONSIVE STYLES ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .hero {
+    margin: 20px 10px;
+    padding: 60px 20px;
+    border-radius: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+}
