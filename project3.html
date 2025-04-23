@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Validation Form</title>
+  </head>
+  <body>
+    <form onsubmit="return validateForm(event)">
+      <h1>Log In</h1>
+
+      <div class="input-group">
+        <label>Username</label>
+        <input
+          type="text"
+          placeholder="Enter your username"
+          id="contact-name"
+          onkeyup="validateName()"
+        />
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="contact-password"
+          onkeyup="validatePassword()"
+        />
+        <span id="password-error"></span>
+      </div>
+
+      <a href="">Forgot Password?</a>
+
+      <div class="btn">
+        <button class="submit-btn" type="submit">Log In</button>
+        <button type="button" onclick="window.location.href='signup.html'">
+          Sign Up
+        </button>
+      </div>
+    </form>
+    <script src="project3.js"></script>
+  </body>
+</html>
