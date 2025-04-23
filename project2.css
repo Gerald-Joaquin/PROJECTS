@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff; /* White text to contrast the dark background */
+  font-size: 16px;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+/* Underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff; /* Light blue for underline */
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 15px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.btn:hover {
+  color: aliceblue;
+  background-color: #333;
+  border-color: #f9f9f9;
+}
+
+/* main page */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  min-height: 80vh; /* Full screen height */
+  padding: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("hotel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Make text readable */
+  /* text-align: center; */
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin-left: 30px;
+}
+
+.hero p {
+  max-width: 1200px;
+  font-size: 20px;
+  margin: 0%;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-btn:hover {
+  color: #f9f9f9;
+  border-color: #ffffff;
+  background-color: #000000;
+}
