@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="project5.css" />
+  </head>
+  <body>
+    <div class="pricing-container">
+      <div class="card hobby">
+        <div>
+          <div class="plan-title" id="regular">Regular</div>
+          <div class="price">$29 <span>/month</span></div>
+          <p class="description">
+            The perfect plan if you're just getting started with our product.
+          </p>
+          <ul>
+            <li>25 products</li>
+            <li>Up to 10,000 subscribers</li>
+            <li>Advanced analytics</li>
+            <li>24-hour support response time</li>
+          </ul>
+        </div>
+        <button class="btn" onclick="openPopup('regular')">
+          Get started today
+        </button>
+      </div>
+
+      <div class="card enterprise">
+        <div>
+          <div class="plan-title" id="premium">Premium</div>
+          <div class="price">$99 <span>/month</span></div>
+          <p class="description">
+            Dedicated support and infrastructure for your company.
+          </p>
+          <ul>
+            <li>Unlimited products</li>
+            <li>Unlimited subscribers</li>
+            <li>Advanced analytics</li>
+            <li>Dedicated support representative</li>
+            <li>Marketing automations</li>
+            <li>Custom integrations</li>
+          </ul>
+        </div>
+        <button class="btn" onclick="openPopup('premium')">
+          Get started today
+        </button>
+      </div>
+      <div class="popup" id="popup">
+        <img src="images-removebg-preview (1).png" alt="" />
+        <h2>Thank You</h2>
+        <p>Your details has been sucessfully submitted. Thanks</p>
+        <p id="subscription"></p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+    <script src="project5.js"></script>
+  </body>
+</html>
